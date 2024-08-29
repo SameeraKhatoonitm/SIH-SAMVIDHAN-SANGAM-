@@ -1,0 +1,235 @@
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+    
+    --primary-color:#00c8ff;
+    --primary2-color:#7dd5ed;
+    --sucess-color:#00bf8e;
+    --warning-color:#f7c94b;
+    --danger-color:#ec1212;
+    --variant-danger-color:#rgba(247, 88, 66, 0.4);
+    --white-color:#fff;
+    --black-color:#000;
+    --light-color:rgba(255,255,255,0.7);
+    --bg-color:#ffffff;
+    --bg1-color:#ebe0e0;
+    --bg2-color:#d4dbdc;
+
+    --container-width-lg:80%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition: all 400ms ease;
+    --shadow:0 3rem 3rem rgba(1, 1, 1, 0.1) ;
+    --box-shadow: 1px 1px 7px 3px var(--primary2-color);
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+section{
+    padding: 1rem 0;
+}
+section h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+/* ====================================NAV BAR =======================================================*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* margin: auto;
+    align-items: center; */
+    height: 70px;
+    background: var(--bg-color);
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
+    z-index: 99;
+  }
+  nav .navbar{
+    height: 100%;
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 50px;
+  }
+  .navbar .logo a{
+    font-size: 1.6rem;
+    color: var(--black-color);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  nav .navbar .nav-links{
+    line-height: 70px;
+    height: 100%;
+  }
+  nav .navbar .links{
+    display: flex;
+  }
+  .nav-links .links li a:hover{
+    color: var(--primary-color);
+
+  }
+  .window-scroll{
+      background: var(--white-color);
+  }
+  .window-scroll a{
+    color: var(--black-color);
+  }
+  .window-scroll a:hover{
+    color: var(--black-color);
+      font-weight: 700;
+  }
+  nav .navbar .links li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 1rem;
+  }
+  nav .navbar .links li a{
+    height: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: var(--black-color);
+    font-size: 15px;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  .navbar .nav-links .sidebar-logo{
+    display: none;
+  }
+  .navbar .bx-menu{
+    display: none;
+  }
+ 
+  /* =========================== Home Banner Start ============================ */
+  .banner{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: .6rem;
+    height: 100vh;
+    justify-content: center;
+    margin-left: 3rem;
+  }
+  .banner_details{
+    display: flex;
+    flex-direction: column;                                       
+    justify-content:flex-start;
+    align-items: center;
+    margin-top:7rem;
+    margin-left: 3rem;
+    gap: 1.5rem;
+    
+  }
+  .banner_details .sologoan_1 p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem 1rem;
+    padding: 1.2rem 1rem;
+    opacity: 40%;
+    font-style: italic;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+  }
+  .banner_details .banner_logo h1{
+        font-size: 4rem;
+        text-align: center;
+        padding: -3rem 0rem;
+        margin: -1rem 0rem;
+        line-height: 1;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+  }
+  .banner_details .sologan_2 p{
+    font-size: 1.2rem;
+    margin-top: 1rem 0 ;
+    font-weight:500;
+  }
+
+  .banner_details .banner_btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  .banner_details .banner_btn .btn {
+    border: 1px solid transparent;
+    background: var(--primary-color);
+    padding: .5rem 1.5rem;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+  }
+  .banner_details .banner_btn .btn:hover{
+    color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+  }
+  .banner_details .banner_btn .art {
+    padding: .5rem 2rem;
+  }
+  .banner_details .banner_btn .btn a{
+    color: var(--white-color);
+    text-align: center;
+  }
+
+
+  .banner_img img{
+    width: 764px;
+    height: 100vh;
+  }
+  
+  .banner_img .chat_bot{
+    position: absolute;
+    left: 1320px;
+    top: 650px;
+    cursor: pointer;
+    
+    
+  }
+  .banner_img .chat_bot img{
+    width: 111px;
+    height: 109px;
+    position: relative;
+  }
+
+  
+
+
+
+
+
+ 
+  
+  
