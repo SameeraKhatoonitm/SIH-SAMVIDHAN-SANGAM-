@@ -19,58 +19,72 @@
 
     --transition: all 400ms ease;
     --shadow:0 3rem 3rem rgba(1, 1, 1, 0.1) ;
-    --box-shadow: 1px 1px 10px 10px var(--primary2-color ,0.2);
+    --box-shadow: 1px 1px 7px 3px var(--primary2-color);
 }
 
-.main{
-    margin-top: 8rem;
+.quiz{
+    margin-top: 5rem;
     max-width: 70%;
     justify-content: center;
 }
-.constitution_Pillar{
+.heading h1{
+    position: relative;
+    left: 12rem;
+}
+.quiz-section{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     justify-content: center;
     gap: 3rem;
     align-items: center;
     margin: 0 auto;
     justify-items: center;
     width: 70%;
-    top: 160px;
+    top: 140px;
     left: 200px;
     position:absolute;
 
 
 }
-.maincontent{
+
+.quiz-content{
     border: 1px solid transparent;
     height: fit-content;
     padding: 1rem 2rem; 
     width: 380px;
+    background: var(--bg-color);
     height: 500px;
     border-radius: 2rem;
+    position: relative;
+    top: 5rem;
     box-shadow: var(--shadow);
 }
-.maincontent:hover{
+
+.quiz-content:hover{
     transition: var(--transition);
     box-shadow: var(--box-shadow);
 }
-.maincontent .main_img img{
+.quiz-content .quiz-img img{
     width: 300px;
     height: 300px;
     align-items: center;
-    
 
 }
-.maincontent  .content p{
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    padding: 0 1rem;
+
+
+.play-now-btn{
+    margin-top: 2rem;
+    border-radius: 2rem;
+    position: relative;
+    top: 2rem;
+    left: 5rem;
 }
-.maincontent .read_more a{
-     color: var(--primary-color);
-     font-size: 1rem;
-     font-weight: 500;
-     padding: 0 1rem;
+.play-now-btn:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+.play-now-btn a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 600;
 }

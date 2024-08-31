@@ -81,7 +81,7 @@ a{
   text-align: center;
   padding: 2rem 0;
   padding-bottom: 1.2rem;
-  margin-top: 3rem;
+  margin-top: 0rem;
   font-size: 2rem;
   
 }
@@ -97,6 +97,27 @@ a{
   clip-path: polygon(100% 0%, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }
 
+.btn{
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--white-color);
+  padding: 1rem 1.6rem;
+  border: 1px solid transparent;
+  font-weight: 400;
+  box-shadow: var(--shadow);
+}
+.btn:hover{
+  background: var(--primary1-color);
+  color: var(--white-color);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.btn-primary{
+  background-color: var(--primary2-color);
+  color: var(--white-color);
+  border-radius: 1rem;
+}
 
 /* ====================================NAV BAR =======================================================*/
 nav{
@@ -127,6 +148,9 @@ nav{
     color: var(--black-color);
     text-decoration: none;
     font-weight: 600;
+  }
+  .navbar .logo a:hover{
+    color: var(--primary-color);
   }
   nav .navbar .nav-links{
     line-height: 70px;
@@ -179,7 +203,7 @@ nav{
     line-height: 70px;
     text-align: center;
     display: inline-block;
-    color: var(--white-color);
+    color: var(--black-color);
     transition: all 0.3s ease;
   }
   nav .navbar .links li .sub-menu{
@@ -201,27 +225,23 @@ nav{
   }
   .navbar .links li .sub-menu li{
     padding: 0 22px;
+    color: var(--black-color);
     border-bottom: 1px solid rgba(255,255,255,0.1);
   }
   .navbar .links li .sub-menu li:hover{
     background: var(--primary-color);
   }
   .navbar .links li .sub-menu a{
-    color: var(--white-color);
+    color: var(--black-color);
     font-size: 15px;
     font-weight: 500;
   }
-  /* .navbar .links li .sub-menu a{
-    color: var(--white-color);
-    font-size: 15px;
-    font-weight: 500;
-  } */
   .navbar .links li .sub-menu .more-arrow{
     line-height: 40px;
   }
-   /* .navbar .links li .htmlCss-more-sub-menu{
+   .navbar .links li .htmlCss-more-sub-menu{
     line-height: 40px; 
-   }  */
+   } 
   .navbar .links li .sub-menu .more-sub-menu{
     position: absolute;
     top: 0;
@@ -238,41 +258,8 @@ nav{
      height: 40px;
     width: 40px;
   }
-  .navbar .search-box i{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    line-height: 40px;
-    text-align: center;
-    font-size: 22px;
-    color: var(--white-color);
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  .navbar .search-box .search-form .btn-search i{
-    margin-top: .7rem;
-  }
-  .navbar .search-box .input-box{
-    position: absolute;
-    right: calc(100% - 40px);
-    top: 80px;
-    height: 60px;
-    width: 300px;
-    background: var(--bg-color);
-    border-radius: 6px;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.4s ease;
-  }
-  .navbar.showInput .search-box .input-box{
-    top: 65px;
-    opacity: 1;
-    pointer-events: auto;
-    background: var(--bg1-color);
-  }
- 
   
+ 
   
   .input-box{
     display: flex;
@@ -283,19 +270,6 @@ nav{
   .navbar .nav-links .sidebar-logo{
     display: none;
   }
-  .navbar .bx-menu{
-    display: none;
-  }
-  .search-form label{
-    font-size: 2rem;
-    padding:3rem 5rem ;
-    color: var(--black);
-    cursor: pointer;
-    
-    margin-left: 2.6rem;
-    /* margin-top: 10rem; */
-  }
-  
   .navbar .bx-menu{
     display: none;
   }
@@ -318,6 +292,8 @@ nav{
     margin-top:7rem;
     margin-left: 3rem;
     gap: 1.5rem;
+    position: relative;
+    left: 5rem;
     
   }
   .banner_details .sologoan_1 p{
@@ -340,7 +316,7 @@ nav{
         margin-bottom: 2rem;
   }
   .banner_details .sologan_2 p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 1rem 0 ;
     font-weight:500;
   }
@@ -375,6 +351,8 @@ nav{
   .banner_img img{
     width: 764px;
     height: 100vh;
+    position: relative;
+    left: 5rem;
   }
   
   .banner_img .chat_bot{
